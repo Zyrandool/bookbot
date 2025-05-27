@@ -16,10 +16,11 @@ def main():
     text = get_book_text(filepath)
     num_words = get_num_words(text)
     char_count = get_char_number(text)
+    average_length = average_word_length(text)
     print("============ BOOKBOT ============")
     print(f"Reading book from {filepath}")
     print("=================================")
-    display_stats(num_words, char_count)
+    display_stats(num_words, char_count, average_length)
 
 
 # Dodaj to wywołanie funkcji main()
