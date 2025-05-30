@@ -1,7 +1,13 @@
 from collections import defaultdict
+import string
 
 def get_num_words(text):
     return len(str.split(text))
+
+def clear_punctuation(text):
+    for char in string.punctuation:
+        text = text.replace(char, "")
+    return text
 
 def get_char_number(text):
     lowertext = str.lower(text)
@@ -14,6 +20,8 @@ def get_char_number(text):
     return char_count
 
 def average_word_length(text):
+    text = clear_punctuation(text)
+    text = str.lower(text)
     words = str.split(text)
     if len(words) == 0:
         return 0
