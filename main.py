@@ -24,11 +24,16 @@ def main():
     num_words = get_num_words(text)
     char_count = get_char_number(text)
     average_length = average_word_length(text)
+    stop_words = ["the", "a", "is", "in", "it", "of", "and", "to", "or", "s", "in", "that", "this", "for", "with", "as", "was", "on", "at", "by", "an", "be", "are", "not", "from", "but", "all", "if", "so"]
+    frequent_words = get_most_frequent_words(text, stop_words=stop_words)
+    num_unique_words = get_num_unique_words(text) 
+    longest_word, shortest_word = get_longest_shortest_words(text)
+    avg_sentence_len = get_average_sentence_length(text)
+
     print("============ BOOKBOT ============")
     print(f"Reading book from {filepath}")
     print("=================================")
-    display_stats(num_words, char_count, average_length)
-
+    display_stats(num_words, char_count, average_length, frequent_words, num_unique_words, longest_word, shortest_word, avg_sentence_len)
 
 # Dodaj to wywołanie funkcji main()
 if __name__ == "__main__":
