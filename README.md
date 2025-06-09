@@ -33,7 +33,7 @@ python --version
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/zyrandool/bookbot.git](https://github.com/zyrandool/bookbot.git)
+    git clone https://github.com/zyrandool/bookbot.git
     ```
 
 2.  **Navigate to the project directory:**
