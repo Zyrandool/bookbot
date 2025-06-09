@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Tuple
 
 def get_num_words(text: str) -> int:
     """Counts the number of words in the given text.
-
+    
     Args:
         text: The input string.
 
